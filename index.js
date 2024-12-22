@@ -135,7 +135,6 @@ const startSniper = async () => {
   while (true) {
     try {
       spinner.start("Checking for new listings...");
-
       const listings = spinner.succeed("Listings fetched.");
 
       for (const listing of listings) {
