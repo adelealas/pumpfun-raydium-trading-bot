@@ -162,10 +162,6 @@ const startSniper = async () => {
 const initialize = async () => {
   try {
     const balance = await checkBalance();
-    if (balance < 0.01 * LAMPORTS_PER_SOL) {
-      logWarning("Low wallet balance.");
-      return;
-    }
     await fetchListings();
     // startSniper();
   } catch (error) {}
